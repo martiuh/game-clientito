@@ -45,6 +45,9 @@ function init() {
         }
 
         render(`<ul>${result}</ul>`);
+      })
+      .catch((error) => {
+        render(`<h2>Cannot get games</h2>`);
       });
   }
 
